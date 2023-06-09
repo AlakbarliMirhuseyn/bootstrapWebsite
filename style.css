@@ -22,6 +22,11 @@ header .menu {
   z-index: 11;
   background-color: #212529;
 }
+header .menu .hamburger_icon .hamburger {
+  color: #fff;
+  font-size: 25px;
+  display: none;
+}
 header .menu .imgbox {
   width: 140px;
 }
@@ -85,4 +90,35 @@ header .btn {
 }
 header .btn:hover {
   background-color: #d9aa00;
+}
+@media (max-width: 800px) {
+  header .header-text h3 {
+    font-size: 29px;
+    line-height: 1.4;
+  }
+  header .header-text h1 {
+    font-size: 30px;
+    line-height: 1.2;
+  }
+  header .btn {
+    font-size: 15px;
+    margin-top: 12px;
+  }
+  header nav {
+    display: none;
+  }
+  header .imgbox img {
+    width: 135px;
+  }
+  header .menu .hamburger_icon .hamburger {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  header .header-text h1 {
+    line-height: 1.2;
+  }
+  header .header-text h3 {
+    line-height: 1.4;
+  }
 }/*# sourceMappingURL=style.css.map */
