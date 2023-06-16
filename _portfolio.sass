@@ -1,0 +1,63 @@
+#portfolio
+    .textbox
+        text-align: center
+        h1
+            text-align: center
+            font-size: 45px
+            letter-spacing: 1px
+            font-weight: 700
+            color: #000
+            text-transform: uppercase
+        p
+            margin: 25px 0
+            font-size: 17px
+            font-weight: 40000px
+            color: #7A757D
+            letter-spacing: 2px
+            font-style: italic
+    .box
+        position: relative
+        &:hover
+            .plus
+                visibility: visible
+                cursor: pointer
+        .imgbox
+            img
+                cursor: pointer
+                transition: all .8s ease
+        .textbox
+            h4
+                font-size: 23px
+                color: #000
+                font-weight: 700
+                margin-top: 18px
+                text-align: center
+            p
+                margin-top: 15px
+                font-size: 16px
+                font-weight: 500
+                color: #7A757D
+                letter-spacing: 0
+                font-style: italic
+    .plus
+        position: absolute
+        top: 0
+        left: 0
+        font-size: 30px
+        background-color: #F9B505
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        height: 79%
+        opacity: 0.9
+        color: #fff
+        font-size: 70px
+        visibility: hidden
+
+    @media(max-width: 500px)
+        .textbox
+            h1
+                font-size: 30px
+            p
+                font-size: 13px
